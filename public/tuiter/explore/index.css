@@ -107,16 +107,11 @@
 
 .wd-name {
     font-weight: bold;
-    margin-right: 5px;
 }
 
 .wd-handle,
 .wd-timestamp {
     color: #657786;
-}
-
-.wd-handle {
-    margin-right: 5px;
 }
 
 .wd-tuit-text {

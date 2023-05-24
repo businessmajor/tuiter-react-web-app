@@ -13,9 +13,9 @@
 <body>
 
 
-    <div class="container">
+    <div class="container border 1px solid #ddd">
         <!-- Header can go here -->
-        <div class="row mt-4">
+        <div class="row mt-4 mb-4">
             <!-- Left Column -->
             <div class="col-2">
                 <!-- Put your navigation items here -->
@@ -39,7 +39,7 @@
                     <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
                         class="list-group-item list-group-item-action">More</a>
                 </div>
-                <div class="d-grid gap-2 mt-3">
+                <div class="d-grid gap-2 mt-1">
                     <button class="btn btn-primary rounded-pill" type="button">Tuit</button>
                 </div>
 
@@ -47,15 +47,17 @@
 
             <!-- Middle Column -->
             <div class="col-7">
-                <!-- search -->
+                <!-- search 
+                <div class="wd-search-container mb-3">
+                    <i class="fa fa-search wd-search-icon"></i>
+                    <input type="text" placeholder="Search Tuiter" class="wd-search-input">
+                    <i class="fa fa-cog wd-gear-icon"></i>
+                </div> -->
+
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text rounded-pill"><i class="fa fa-search"></i></span>
-                    </div>
+                    <span class="input-group-text rounded-pill"><i class="fa fa-search"></i></span>
                     <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
-                    <div class="input-group-append">
-                        <span class="input-group-text rounded-pill"><i class="fa fa-cog"></i></span>
-                    </div>
+                    <span class="input-group-text rounded-pill"><i class="fa fa-cog"></i></span>
                 </div>
 
                 <!-- nav tabs -->
@@ -79,140 +81,161 @@
 
                 <!-- Tuits list -->
                 <div class="wd-image-container">
-                    <img src="../media/monaco.jpeg" alt="Monaco">
+                    <img src="../media/ss.tiff" alt="Starship">
                     <h1 class="wd-image-text">SpaceX's Starship</h1>
                 </div>
 
-                <ul class="wd-tuits">
-                    <li class="wd-rec">
-                        <div class="wd-rec-content">
-                            <span class="wd-rec-details">Trending in News</span><br>
-                            <span class="wd-name">Monaco</span><br>
-                            <span class="wd-rec-details">100K Retuits</span><br>
+                <div class="container">
+                    <div class="row border 1px solid #ddd">
+                        <!-- Left Column -->
+                        <div class="col-lg-10">
+                            <span class="wd-rec-details">Web Development</span><br>
+                            <span class="wd-name">ReactJS</span>
+                            <span class="wd-timestamp"> - 2h</span><br>
+                            <p>ReactJS is a component based front-end library that makes it very easy to build Single
+                                Page Applications or SPAs.</p>
                         </div>
-                    </li>
-                    <li class="wd-rec">
-                        <div class="wd-rec-content">
-                            <span class="wd-rec-details">Trending in Gaming</span><br>
-                            <span class="wd-name">Metal Gear Solid</span><br>
-                            <span class="wd-rec-details">104K Retuits</span><br>
+                        <!-- Right Column -->
+                        <div class="col-lg-2">
+                            <img src="../media/logo192.png" alt="Starship" class="img-thumbnail mt-3">
                         </div>
-                    </li>
-                    <li class="wd-rec">
-                        <div class="wd-rec-content">
-                            <span class="wd-rec-details">Trending</span><br>
-                            <span class="wd-name">Warren Buffet</span><br>
-                            <span class="wd-rec-details">5,502 Retuits</span><br>
+                    </div>
+
+                    <div class="row border 1px solid #ddd">
+                        <!-- Left Column -->
+                        <div class="col-lg-10">
+                            <span class="wd-rec-details">Web Development</span><br>
+                            <span class="wd-name">ReactJS</span>
+                            <span class="wd-timestamp"> - 2h</span><br>
+                            <p>ReactJS is a component based front-end library that makes it very easy to build Single
+                                Page Applications or SPAs.</p>
                         </div>
-                    </li>
-                </ul>
+                        <!-- Right Column -->
+                        <div class="col-lg-2">
+                            <img src="../media/logo192.png" alt="Starship" class="img-thumbnail mt-3">
+                        </div>
+                    </div>
+
+                    <div class="row border 1px solid #ddd">
+                        <!-- Left Column -->
+                        <div class="col-lg-10">
+                            <span class="wd-rec-details">Web Development</span><br>
+                            <span class="wd-name">ReactJS</span>
+                            <span class="wd-timestamp"> - 2h</span><br>
+                            <p>ReactJS is a component based front-end library that makes it very easy to build Single
+                                Page Applications or SPAs.</p>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-lg-2">
+                            <img src="../media/logo192.png" alt="Starship" class="img-thumbnail mt-3">
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
             <!-- Right Column -->
             <div class="col-3">
-                <!--"Who to follow" -->
-                <span class="wd-header">Who to follow</span>
-                <div class="list-group mt-2">
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
+                <div class="container">
+                    <!--"Who to follow" -->
+                    <div class="list-group">
+                        <div class="row border 1px solid #ddd">
+                            <span class="wd-header">Who to follow</span>
                         </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">Stephano Barrios-Pompei</h6>
-                            <p class="wd-handle">@businessmajor</p>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">Stephano Barrios-Pompei</h6>
+                                <p class="wd-handle">@businessmajor</p>
+                            </div>
+                            <div class="col-2 ">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
                         </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/java.png" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">Java</h6>
+                                <p class="wd-handle">@Java</p>
+                            </div>
+                            <div class="col-2">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">Relativity Space</h6>
+                                <p class="wd-handle">@relativityspace</p>
+                            </div>
+                            <div class="col-2">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">Virgin Galactic</h6>
+                                <p class="wd-handle">@virgingalactic</p>
+                            </div>
+                            <div class="col-2">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/nasa.png" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">NASA</h6>
+                                <p class="wd-handle">@NASA</p>
+                            </div>
+                            <div class="col-2">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
+                        </div>
+                        <!--Follow me!-->
+                        <div class="row border 1px solid #ddd">
+                            <div class="col-2">
+                                <img src="../media/tsla.png" alt="User Profile Picture"
+                                    class="wd-profile-pic rounded-circle">
+                            </div>
+                            <div class="col-8">
+                                <h6 class="wd-name">Tesla</h6>
+                                <p class="wd-handle">@Tesla</p>
+                            </div>
+                            <div class="col-2">
+                                <!--Follow button-->
+                                <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                            </div>
                         </div>
                     </div>
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">Java</h6>
-                            <p class="wd-handle">@Java</p>
-                        </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">Relativity Space</h6>
-                            <p class="wd-handle">@relativityspace</p>
-                        </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">Virgin Galactic</h6>
-                            <p class="wd-handle">@virgingalactic</p>
-                        </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">NASA</h6>
-                            <p class="wd-handle">@NASA</p>
-                        </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-                    <!--Follow me!-->
-                    <div class="row">
-                        <div class="col-2">
-                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
-                                class="wd-profile-pic rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h6 class="wd-name">Tesla</h6>
-                            <p class="wd-handle">@Tesla</p>
-                        </div>
-                        <div class="col-2">
-                            <!--Follow button-->
-                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-
-
-
-
-
 
 
         </div>
