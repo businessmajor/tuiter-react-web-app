@@ -5,53 +5,60 @@
     <meta charset="UTF-8">
     <title>Bookmarks (CSS)</title>
     <link href="index.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="wd-container">
-        <div class="grid-row">
-            <div class="wd-left-sidebar">
-                <i class="fa fa-backward wd-back-icon"></i>
-            </div>
-            <div class="wd-main-content">
-                <h2 class="wd-header"> "All Bookmarks" </h2>
-            </div>
-            <div class="wd-right-sidebar">
-                <i class="fa fa-hamburger wd-hamburger-icon"></i>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <ul class="wd-tweets">
-            <li class="wd-tweet">
-                <img src="../media/businessmajor.jpeg" alt="User Profile Picture" class="wd-profile-pic">
-                <div class="wd-tweet-content">
-                    <div class="wd-tweet-header">
-                        <span class="wd-username">Username</span>
-                        <span class="wd-handle">@handle</span>
-                        <span class="wd-timestamp">5m</span>
-                    </div>
-                    <p class="wd-tweet-text">This is a tweet. It's just an example, but it could be about anything.</p>
-                    <img src="boston.jpg" alt="Boston" class="wd-tweet-pic">
-                    <p class="wd-pic-caption">This is a caption for the picture.</p>
-                    <ul class="wd-tweet-actions">
-                        <li><i class="fa fa-comment" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-retweet" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-eye" aria-hidden="true"></i></li>
-                    </ul>
+    <header class="wd-header">
+        <a href="../explore/explore-css.html" class="fa fa-arrow-left"></a>
+        <span class="wd-header">All Bookmarks</span>
+        <span class="wd-hamburger">&#9776;</span>
+    </header>
+    <ul class="wd-tuits">
+        <li class="wd-tuit">
+            <img src="../media/businessmajor.jpeg" alt="User Profile Picture" class="wd-profile-pic">
+            <div class="wd-tuit-content">
+                <div class="wd-tuit-header">
+                    <span class="wd-username">Stephano Barrios-Pompei</span>
+                    <span class="wd-handle">@businessmajor</span>
+                    <span class="wd-timestamp">5m</span>
                 </div>
-            </li>
-            <!-- More tweets... -->
-        </ul>
-    </div>
+                <p class="wd-tuit-text">I was born in Fort Lauderdale, Florida!</p>
+                <img src="ftlaudy.jpg" alt="tuit" class="wd-tuit-pic">
+                <p class="wd-pic-caption">This is a caption for the picture of Fort Lauderdale. Its beautiful right?</p>
+                <ul class="wd-tuit-actions">
+                    <li><i class="fa fa-comment"></i> 3</li>
+                    <li><i class="fa fa-retweet"></i> 10</li>
+                    <li><i class="fa fa-heart"></i> 69</li>
+                    <li><i class="fa fa-eye"></i> 42.0K</li>
+                    <li><i class="fa fa-share"></i></li>
+                </ul>
+            </div>
+        </li>
+        <!-- More tuits... -->
+        <li class="wd-tuit">
+            <img src="../media/businessmajor.jpeg" alt="User Profile Picture" class="wd-profile-pic">
+            <div class="wd-tuit-content">
+                <div class="wd-tuit-header">
+                    <span class="wd-username">Stephano Barrios-Pompei</span>
+                    <span class="wd-handle">@businessmajor</span>
+                    <span class="wd-timestamp">12m</span>
+                </div>
+                <p class="wd-tuit-text">Hi Tuiter, I live in Boston. Tuit tuit!</p>
+                <img src="boston.jpeg" alt="tuit" class="wd-tuit-pic">
+                <p class="wd-pic-caption">This is a caption for the picture of Boston. Its beautiful right?</p>
+                <ul class="wd-tuit-actions">
+                    <li><i class="fa fa-comment"></i> 9</li>
+                    <li><i class="fa fa-retweet"></i> 38</li>
+                    <li><i class="fa fa-heart"></i> 98</li>
+                    <li><i class="fa fa-eye"></i> 45.7K</li>
+                    <li><i class="fa fa-share"></i></li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
 </body>
 
 </html>

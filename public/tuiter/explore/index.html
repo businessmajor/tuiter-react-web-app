@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet" />
+    <!--link href="../styles.css" rel="stylesheet" /-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- Header can go here -->
+        <div class="row mt-4">
+            <!-- Left Column -->
+            <div class="col-2">
+                <!-- Put your navigation items here -->
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action active">
+                        <i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="../home.html" class="list-group-item list-group-item-action">
+                        Home</a>
+                    <a href="index.html" class="list-group-item list-group-item-action active">
+                        Explore</a>
+                    <a href="explore-css.html" class="list-group-item list-group-item-action">
+                        Explore (CSS)</a>
+                    <a href="notifications.html" class="list-group-item list-group-item-action">
+                        Notifications</a>
+                    <a href="messages.html" class="list-group-item list-group-item-action">Messages</a>
+                    <a href="bookmarks/index.html" class="list-group-item list-group-item-action">Bookmarks</a>
+                    <a href="bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">Bookmarks
+                        (CSS)</a>
+                    <a href="lists.html" class="list-group-item list-group-item-action">Lists</a>
+                    <a href="profile.html" class="list-group-item list-group-item-action">Profile</a>
+                    <a href="https://en.wikipedia.org/wiki/Ender%27s_Game"
+                        class="list-group-item list-group-item-action">More</a>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary rounded-pill" type="button">Tuit</button>
+                </div>
+
+            </div>
+
+            <!-- Middle Column -->
+            <div class="col-7">
+                <!-- search -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text rounded-pill"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control rounded-pill" placeholder="Search Tuiter">
+                    <div class="input-group-append">
+                        <span class="input-group-text rounded-pill"><i class="fa fa-cog"></i></span>
+                    </div>
+                </div>
+
+                <!-- nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="sports.html" tabindex="-1">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="entertainment.html" tabindex="-1">Entertainment</a>
+                    </li>
+                </ul>
+
+                <!-- Tuits list -->
+                <div class="wd-image-container">
+                    <img src="../media/monaco.jpeg" alt="Monaco">
+                    <h1 class="wd-image-text">SpaceX's Starship</h1>
+                </div>
+
+                <ul class="wd-tuits">
+                    <li class="wd-rec">
+                        <div class="wd-rec-content">
+                            <span class="wd-rec-details">Trending in News</span><br>
+                            <span class="wd-name">Monaco</span><br>
+                            <span class="wd-rec-details">100K Retuits</span><br>
+                        </div>
+                    </li>
+                    <li class="wd-rec">
+                        <div class="wd-rec-content">
+                            <span class="wd-rec-details">Trending in Gaming</span><br>
+                            <span class="wd-name">Metal Gear Solid</span><br>
+                            <span class="wd-rec-details">104K Retuits</span><br>
+                        </div>
+                    </li>
+                    <li class="wd-rec">
+                        <div class="wd-rec-content">
+                            <span class="wd-rec-details">Trending</span><br>
+                            <span class="wd-name">Warren Buffet</span><br>
+                            <span class="wd-rec-details">5,502 Retuits</span><br>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-3">
+                <!--"Who to follow" -->
+                <span class="wd-header">Who to follow</span>
+                <div class="list-group mt-2">
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">Stephano Barrios-Pompei</h6>
+                            <p class="wd-handle">@businessmajor</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">Java</h6>
+                            <p class="wd-handle">@Java</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">Relativity Space</h6>
+                            <p class="wd-handle">@relativityspace</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">Virgin Galactic</h6>
+                            <p class="wd-handle">@virgingalactic</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">NASA</h6>
+                            <p class="wd-handle">@NASA</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                    <!--Follow me!-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../media/businessmajor.jpeg" alt="User Profile Picture"
+                                class="wd-profile-pic rounded-circle">
+                        </div>
+                        <div class="col-8">
+                            <h6 class="wd-name">Tesla</h6>
+                            <p class="wd-handle">@Tesla</p>
+                        </div>
+                        <div class="col-2">
+                            <!--Follow button-->
+                            <button type="button" class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
