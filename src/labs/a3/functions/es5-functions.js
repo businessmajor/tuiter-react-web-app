@@ -7,12 +7,11 @@ function ES5Functions() {
     console.log(twoPlusFour);
 
     return (
-        <>
-            <h2>Functions</h2>
+        <div>
             <h3>Legacy ES5 functions</h3>
             twoPlusFour = {twoPlusFour}<br />
             add(2, 4) = {add(2, 4)}<br />
-        </>
+        </div>
     )
 }
 
