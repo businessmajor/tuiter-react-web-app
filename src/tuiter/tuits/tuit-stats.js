@@ -1,10 +1,10 @@
-import React, {useState} from "react";
-import { useDispatch } from "react-redux";
+// import React, {useState} from "react";
+// import { useDispatch } from "react-redux";
 // import {likeTuit} from "./reducers/tuits-reducer";
 
 const TuitStats = ({ tuit }) => {
 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
 
     const likeClickHandler = (id) => {
         // dispatch(likeTuit(id));
