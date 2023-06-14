@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import {createTuit} from "./tuits/reducers/tuits-reducer";
+// import {createTuit} from "./tuits/reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuit-thunks";
 import {useDispatch} from "react-redux";
-// import { createTuitThunk } from "./services/tuits-thunks";
 import { AiOutlinePicture } from 'react-icons/ai';
 import { HiOutlineGift } from 'react-icons/hi';
 import { MdFormatListBulleted } from 'react-icons/md';
@@ -17,7 +17,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   }
 

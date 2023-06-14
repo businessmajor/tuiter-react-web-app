@@ -1,13 +1,15 @@
 // import React, {useState} from "react";
 // import {likeTuit} from "./reducers/tuits-reducer";
-import { updateTuitThunk } from "../services/tuit-thunks";
+import { updateTuitThunk } from "../services/tuits-thunks";
 import { useDispatch } from "react-redux";
-import { FaHeart } from "react-icons/fa";
-import { FaThumbsDown } from "react-icons/fa";
 
 const TuitStats = ({ tuit }) => {
 
     const dispatch = useDispatch()
+
+    const likeClickHandler = (id) => {
+        // dispatch(likeTuit(id));
+    };
 
     return (
         <div className="row mt-2">
@@ -22,21 +24,15 @@ const TuitStats = ({ tuit }) => {
                 {tuit.retuits}
             </div>
 
-            <FaHeart
-                className="text-danger"
-                onClick={() =>
-                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+            <div className="col" onClick={() => likeClickHandler(tuit._id)}>
+                {tuit.liked &&
+                    <i className="bi bi-heart-fill me-2" style={{ color: tuit.liked ? 'red' : "white" }}></i>
                 }
-            />
-            <span className="ms-2">{tuit.likes}</span>
-
-            <FaThumbsDown
-                className="text-danger"
-                onClick={() =>
-                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }))
+                {!tuit.liked &&
+                    <i className="bi bi-heart me-2"></i>
                 }
-            />
-            <span className="ms-2">{tuit.likes}</span>
+                {tuit.likes}
+            </div>
 
             <div className="col">
                 <i className="bi bi-box-arrow-up-right me-2"></i>
