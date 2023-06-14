@@ -3,6 +3,7 @@ import TuitSummaryList from "../tuit-summary-list";
 import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import "./index.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function ExploreScreen() {
   return (
