@@ -3,7 +3,6 @@ import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "./todo/todo-list";
-import Exam from "./exam.js";
 
 function Assignment3() {
   return (
@@ -14,7 +13,6 @@ function Assignment3() {
       <Styles/>
       <Classes/>
       <JavaScript />
-      <Exam />
     </div>
   );
 }
