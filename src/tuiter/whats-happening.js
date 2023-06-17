@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import {createTuit} from "./tuits/reducers/tuits-reducer";
-import {createTuitThunk} from "./services/tuit-thunks";
-import {useDispatch} from "react-redux";
+import { createTuitThunk } from "./services/tuit-thunks";
+import { useDispatch } from "react-redux";
 import { AiOutlinePicture } from 'react-icons/ai';
 import { HiOutlineGift } from 'react-icons/hi';
 import { MdFormatListBulleted } from 'react-icons/md';
@@ -24,7 +24,7 @@ const WhatsHappening = () => {
   return (
     <div className="row">
       <div className="col-auto">
-        <img src={require(`./images/businessmajor.jpeg`)} width={60} alt="Business Major" className="float-end rounded-circle"/>
+        <img src={require(`./images/businessmajor.jpeg`)} width={60} alt="Business Major" className="float-end rounded-circle" />
       </div>
       <div className="col-10">
         <textarea

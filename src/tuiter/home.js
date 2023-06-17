@@ -2,7 +2,7 @@ import React from "react";
 import WhatsHappening from "./whats-happening";
 import TuitList from "./tuits/tuits-list";
 
-const HomeScreen = () => {
+const Home = () => {
  return(
    <>
      <h4>Home</h4>
@@ -11,4 +11,4 @@ const HomeScreen = () => {
    </>
  );
 };
-export default HomeScreen;
+export default Home;
