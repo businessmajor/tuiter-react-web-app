@@ -16,5 +16,11 @@
     "userName": "SpaceX",
     "handle": "SpaceX",
     "avatarIcon": "spacex.jpg"
+  },
+  {
+    "_id": 69,
+    "userName": "Stephano",
+    "handle": "businessmajor",
+    "avatarIcon": "businessmajor.jpeg"
   }
 ]

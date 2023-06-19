@@ -1,27 +1,27 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import tuits from './tuits.json';
+import tuits from './tuits.json';
 import { createTuitThunk, findTuitsThunk, updateTuitThunk, deleteTuitThunk } from "./../services/tuit-thunks";
 
 const initialState = {
-  tuits: [],
+  tuits: tuits,
   loading: false
 }
 
-// const currentUser = {
-//   "userName": "Stephano",
-//   "handle": "businessmajor",
-//   "image": "businessmajor.jpeg",
-// };
+const currentUser = {
+  "userName": "Stephano",
+  "handle": "businessmajor",
+  "image": "businessmajor.jpeg",
+};
 
-// const templateTuit = {
-//   ...currentUser,
-//   "topic": "Finance",
-//   "time": "Just now",
-//   "liked": false,
-//   "replies": 0,
-//   "retuits": 0,
-//   "likes": 0,
-// };
+const templateTuit = {
+  ...currentUser,
+  "topic": "Finance",
+  "time": "Just now",
+  "liked": false,
+  "replies": 0,
+  "retuits": 0,
+  "likes": 0,
+};
 
 const tuitsSlice = createSlice({
   name: 'tuits',
