@@ -11,7 +11,7 @@ const TuitStats = ({ tuit }) => {
     };
 
     const handleUnlike = () => {
-        dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }));
+        dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }));
     };
 
     return (
@@ -33,7 +33,7 @@ const TuitStats = ({ tuit }) => {
 
             <div className="col">
                 <FaThumbsDown className="text-danger" onClick={handleUnlike} />
-                <span className="ms-2">{tuit.likes}</span>
+                <span className="ms-2">{tuit.dislikes}</span>
             </div>
 
             <div className="col">
