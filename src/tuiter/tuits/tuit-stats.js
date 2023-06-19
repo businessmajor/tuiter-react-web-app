@@ -1,17 +1,21 @@
-// import React, {useState} from "react";
-// import {likeTuit} from "./reducers/tuits-reducer";
-import { updateTuitThunk } from "../services/tuit-thunks";
+import React from "react";
 import { useDispatch } from "react-redux";
-import { FaHeart } from "react-icons/fa";
-import { FaThumbsDown } from "react-icons/fa";
+import { updateTuitThunk } from "../services/tuit-thunks";
+import { FaHeart, FaThumbsDown } from "react-icons/fa";
 
 const TuitStats = ({ tuit }) => {
+    const dispatch = useDispatch();
 
-    const dispatch = useDispatch()
+    const handleLike = () => {
+        dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }));
+    };
+
+    const handleUnlike = () => {
+        dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }));
+    };
 
     return (
         <div className="row mt-2">
-
             <div className="col">
                 <i className="bi bi-chat-square me-2"></i>
                 {tuit.replies}
@@ -22,28 +26,21 @@ const TuitStats = ({ tuit }) => {
                 {tuit.retuits}
             </div>
 
-            <FaHeart
-                className="text-danger"
-                onClick={() =>
-                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
-                }
-            />
-            <span className="ms-2">{tuit.likes}</span>
+            <div className="col">
+                <FaHeart className="text-danger" onClick={handleLike} />
+                <span className="ms-2">{tuit.likes}</span>
+            </div>
 
-            <FaThumbsDown
-                className="text-danger"
-                onClick={() =>
-                    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }))
-                }
-            />
-            <span className="ms-2">{tuit.likes}</span>
+            <div className="col">
+                <FaThumbsDown className="text-danger" onClick={handleUnlike} />
+                <span className="ms-2">{tuit.likes}</span>
+            </div>
 
             <div className="col">
                 <i className="bi bi-box-arrow-up-right me-2"></i>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
 export default TuitStats;

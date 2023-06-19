@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { BiHome, BiCompass, BiBell, BiEnvelope, BiBookmark, BiListUl, BiUser, BiDotsHorizontal } from "react-icons/bi";
+import { BiHome, BiCompass, BiBell, BiEnvelope, BiBookmark, BiListUl, BiUser, BiUserPlus, BiDotsHorizontal } from "react-icons/bi";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const NavigationSidebar = () => {
@@ -43,9 +43,24 @@ const NavigationSidebar = () => {
         <BiDotsHorizontal className="me-2" />
         More
       </Link>
-      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-      {currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
+      {!currentUser && (
+        <>
+          <Link className="list-group-item" to="/tuiter/login">
+            <BiUser className="me-2" />
+            Login
+          </Link>
+          <Link className="list-group-item" to="/tuiter/register">
+            <BiUserPlus className="me-2" />
+            Register
+          </Link>
+        </>
+      )}
+      {currentUser && (
+        <Link className="list-group-item" to="/tuiter/profile">
+          <BiUser className="me-2" />
+          Profile
+        </Link>
+      )}
     </div>
   );
 };

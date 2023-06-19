@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list/index";
-import HomeScreen from "./home-screen"
+import Home from "./home"
 import ExploreScreen from "./explore-screen/explore-screen"
 import BookmarksScreen from "./bookmarks-screen"
 import ProfileScreen from "./profile-screen"
@@ -36,7 +36,7 @@ function Tuiter() {
           </div>
           <div className="col-10 col-sm-10 col-md-10 col-lg-7 col-xl-7 col-xxl-7">
             <Routes>
-              <Route path="/home" element={<HomeScreen />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/explore" element={<ExploreScreen />} />
               <Route path="/bookmarks" element={<BookmarksScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />

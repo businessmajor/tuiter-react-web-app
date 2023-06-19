@@ -2,8 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-// import { deleteTuit } from "./reducers/tuits-reducer";
-import {deleteTuitThunk} from "../services/tuit-thunks";
+import { deleteTuitThunk } from "../services/tuit-thunks";
 
 const TuitItem = ({ tuit }) => {
     const dispatch = useDispatch();
@@ -23,8 +22,11 @@ const TuitItem = ({ tuit }) => {
                 </div>
                 <div className="col-10">
                     <div>
-                        <i className="bi bi-x-lg float-end"
-                            onClick={() => deleteTuitHandler(tuit._id)}></i>
+                        <i
+                            className="bi bi-x-lg float-end"
+                            onClick={() => deleteTuitHandler(tuit._id)}
+                            style={{ cursor: "pointer" }}
+                        ></i>
                         <span>
                             <div>
                                 <span style={{ fontWeight: "bold" }}>{tuit.userName} </span>
