@@ -18,22 +18,22 @@ const TuitStats = ({ tuit }) => {
         <div className="row mt-2">
             <div className="col">
                 <i className="bi bi-chat-square me-2"></i>
-                {tuit.replies}
+                {tuit.replies || 0}
             </div>
 
             <div className="col">
                 <i className="bi bi-arrow-repeat me-2"></i>
-                {tuit.retuits}
+                {tuit.retuits || 0}
             </div>
 
             <div className="col">
                 <FaHeart className="text-danger" onClick={handleLike} />
-                <span className="ms-2">{tuit.likes}</span>
+                <span className="ms-2">{tuit.likes || 0}</span>
             </div>
 
             <div className="col">
                 <FaThumbsDown className="text-danger" onClick={handleUnlike} />
-                <span className="ms-2">{tuit.dislikes}</span>
+                <span className="ms-2">{tuit.dislikes || 0}</span>
             </div>
 
             <div className="col">

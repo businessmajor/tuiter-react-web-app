@@ -29,7 +29,7 @@ const TuitItem = ({ tuit }) => {
                         ></i>
                         <span>
                             <div>
-                                <span style={{ fontWeight: "bold" }}>{tuit.userName} </span>
+                                <span style={{ fontWeight: "bold" }}>{tuit.username} </span>
                                 <i className="bi bi-check-circle-fill" style={{ color: "#2a9fd6" }}></i>
                                 <small className="text-muted">
                                     {" "}
