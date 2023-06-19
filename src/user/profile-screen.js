@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { profileThunk, logoutThunk, updateUserThunk } from "./services/auth-thunks";
+import { profileThunk, logoutThunk, updateUserThunk } from "../tuiter/services/auth-thunks";
 
 function ProfileScreen() {
     const { currentUser } = useSelector((state) => state.user);
     const [profile, setProfile] = useState(currentUser);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
-    const saveProfile = async () => {
+    const save = async () => {
         await dispatch(updateUserThunk(profile));
     };
 
@@ -66,9 +65,9 @@ function ProfileScreen() {
                 </div>
             )}
             <button onClick={handleLogout}>Logout</button>
-            <button onClick={saveProfile}>Save</button>
+            <button onClick={save}>Save</button>
         </div>
     );
-}
+};
 
 export default ProfileScreen;

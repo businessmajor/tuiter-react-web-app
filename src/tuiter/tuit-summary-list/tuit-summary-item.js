@@ -5,7 +5,7 @@ const TuitSummaryItem = ({ tuit }) => {
         <li className="list-group-item">
             <div className="row">
                 <div className="col-10">
-                    <div>{tuit.username} . {tuit.time}</div>
+                    <div>{tuit.username} <i className="bi bi-dot"></i> {tuit.time}</div>
                     <div className="fw-bolder">{tuit.topic}</div>
                     <div>{tuit.title}</div>
                 </div>

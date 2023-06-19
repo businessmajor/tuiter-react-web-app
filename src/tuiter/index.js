@@ -5,9 +5,9 @@ import WhoToFollowList from "./who-to-follow-list/index";
 import Home from "./home"
 import ExploreScreen from "./explore-screen/explore-screen"
 import BookmarksScreen from "./bookmarks-screen"
-import ProfileScreen from "./profile-screen"
-import LoginScreen from "./user/login-screen";
-import RegisterScreen from "./user/register-screen";
+import ProfileScreen from "../user/profile-screen"
+import LoginScreen from "../user/login-screen";
+import RegisterScreen from "../user/register-screen";
 import authReducer from "./reducers/auth-reducer";
 import React from "react";
 //import ExploreComponent from "./explore";

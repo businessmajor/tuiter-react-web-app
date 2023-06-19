@@ -1,0 +1,9 @@
+.sidebar-text {
+    display: inline-block;
+  }
+  
+  @media (max-width: 480px ) {
+    .sidebar-text {
+      display: none;
+    }
+  }

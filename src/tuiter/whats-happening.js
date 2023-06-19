@@ -4,11 +4,10 @@ import { createTuitThunk } from "./services/tuit-thunks";
 import { useDispatch } from "react-redux";
 import { AiOutlinePicture } from 'react-icons/ai';
 import { HiOutlineGift } from 'react-icons/hi';
-import { MdFormatListBulleted } from 'react-icons/md';
+// import { MdFormatListBulleted } from 'react-icons/md';
 import { BsEmojiSmile } from 'react-icons/bs';
 import { TiCalendar } from 'react-icons/ti';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
-import { BiBold, BiItalic } from 'react-icons/bi';
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
@@ -17,7 +16,7 @@ const WhatsHappening = () => {
     const newTuit = {
       topic: "Finance",
       username: "Stephano",
-      title: "Greetings from Postman!",
+      title: "What's happening? Find out here!",
       time: "Just now",
       image: "businessmajor.jpeg",
       liked: false,
@@ -51,14 +50,11 @@ const WhatsHappening = () => {
             Tuit
           </button>
           <div className="text-primary fs-2">
-            <AiOutlinePicture className="me-3" />
-            <HiOutlineGift className="me-3" />
-            <MdFormatListBulleted className="me-3" />
-            <BsEmojiSmile className="me-3" />
-            <TiCalendar className="me-3" />
-            <HiOutlineLocationMarker className="me-3" />
-            <BiBold className="me-3" />
-            <BiItalic className="me-3" />
+            <AiOutlinePicture className="me-3" color="grey" />
+            <HiOutlineGift className="me-3" color="grey" />
+            <BsEmojiSmile className="me-3" color="grey" />
+            <TiCalendar className="me-3" color="grey" />
+            <HiOutlineLocationMarker className="me-3" color="grey" />
           </div>
         </div>
       </div>
