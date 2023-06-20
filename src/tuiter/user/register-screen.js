@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { registerThunk } from "../tuiter/services/auth-thunks";
+import { registerThunk } from "../services/auth-thunks";
 
 function RegisterScreen() {
   const [username, setUsername] = useState("");
@@ -11,7 +11,7 @@ function RegisterScreen() {
   const handleRegister = async () => {
     try {
       await dispatch(registerThunk({ username, password }));
-      navigate("/profile");
+      navigate("/home");
     } catch (e) {
       alert(e);
     }

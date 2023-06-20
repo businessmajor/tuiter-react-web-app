@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import * as service from "./tuits-service";
+import * as service from "./tuit-service";
 
 
 export const findTuitsThunk = createAsyncThunk(
