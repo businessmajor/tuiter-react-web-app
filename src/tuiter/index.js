@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router";
 import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list/index";
-import Home from "./home"
-import ExploreScreen from "./explore-screen/explore-screen"
+import Home from "./home";
+import ExploreScreen from "./explore"
 import BookmarksScreen from "./bookmarks-screen"
 import ProfileScreen from "./user/profile-screen";
 import LoginScreen from "./user/login-screen";

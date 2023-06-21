@@ -1,9 +1,10 @@
 .sidebar-text {
-    display: inline-block;
+    display: none;
   }
   
-  @media (max-width: 480px ) {
+  @media (min-width: 600px ) {
     .sidebar-text {
-      display: none;
+      display: inline-flex;
+      
     }
   }
