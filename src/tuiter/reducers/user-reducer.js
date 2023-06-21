@@ -2,9 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
     getUsersThunk,
     loginThunk,
+    registerThunk,
     profileThunk,
     logoutThunk,
-} from "./users-thunks";
+    updateUserThunk,
+} from "../services/user-thunks.js";
 
 const initialState = {
     users: [],
@@ -30,6 +32,18 @@ const usersSlice = createSlice({
         },
 
         [loginThunk.fulfilled]: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+            state.error = null;
+        },
+
+        [registerThunk.fulfilled]: (state, action) => {
+            state.currentUser = action.payload;
+            state.loading = false;
+            state.error = null;
+        },
+
+        [updateUserThunk.fulfilled]: (state, action) => {
             state.currentUser = action.payload;
             state.loading = false;
             state.error = null;

@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const USER_API = "http://localhost:4000/users";
-const BASE_API = "http://localhost:4000/api";
+const SERVER = "https://tuiter-node-server-app-bobj.onrender.com";
+const USER_API = `${SERVER}/users`;
+const BASE_API = `${SERVER}/api`;
 
 const request = axios.create({
     withCredentials: true,
@@ -9,6 +10,11 @@ const request = axios.create({
 
 export const login = async (user) => {
     const response = await request.post(`${BASE_API}/login`, user);
+    return response.data;
+};
+
+export const register = async (user) => {
+    const response = await request.post(`${BASE_API}/register`, user);
     return response.data;
 };
 
